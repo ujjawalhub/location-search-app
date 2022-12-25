@@ -8,7 +8,7 @@ const useElasticSearchData = (query) => {
         const fetchData = async () => {
             if(!query) return;
             fetch(
-                `${ES_HOST}/search?query=${encodeURIComponent(query)}`,
+                `${ES_HOST}search?query=${encodeURIComponent(query)}`,
                 {
                     method: "GET", 
                     mode: 'cors',

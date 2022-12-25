@@ -61,17 +61,15 @@ function Search() {
     }
 
     useEffect(() => {
-        let ds = data||[];
-        ds = ds.filter(x=> !esSearch.includes(x));
-        setOptions(Array.from(esSearch||[]).concat(ds))
+        setLoading(true);
+        setOptions(Array.from(new Set(esSearch.concat(data))))
         setLoading(false);
     }, [data]);
 
     // adding location api data to es search data with filtering out existing one.
     useEffect(()=> {
-        let ds = data||[];
-        ds = ds.filter(x=> !esSearch.includes(x));
-        setOptions(Array.from(esSearch||[]).concat(ds))
+        setLoading(true);
+        setOptions(Array.from(new Set(esSearch.concat(data))))
         setLoading(false);
     }, [esSearch])
 

@@ -39,6 +39,7 @@ build/
 # dependencies
 location-react-app/node_modules
 location-react-app/.pnp
+location-react-app/.eslintcache
 .pnp.js
 
 # testing

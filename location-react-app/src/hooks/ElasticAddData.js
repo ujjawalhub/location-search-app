@@ -8,7 +8,7 @@ const useElasticAddData = (query) => {
         const fetchData = async () => {
             if(!query) return;
             fetch(
-                `${ES_HOST}/add?query=${encodeURIComponent(query)}`,
+                `${ES_HOST}add?query=${encodeURIComponent(query)}`,
                 {
                     method: "GET", 
                     mode: 'cors',
