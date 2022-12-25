@@ -1,0 +1,41 @@
+ /* multiselect css override */
+.multiselect-container {
+    width: 75vw !important;
+    max-width: 660px !important;
+}
+.multiSelectContainer ul{
+    border-radius: 12px !important;
+}
+.optionListContainer {
+    width: 95% !important;
+    left: 3% !important;
+}
+.chip{
+    display: none !important;
+}
+ /* component css */
+.search {
+    text-align: -webkit-center;
+    padding: 10px;
+    padding-top: 40px;
+}
+.search-wrapper {
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    padding: 10px 20px !important;
+    border: 1px solid lightgray !important;
+    height: 50px;
+    border-radius: 50px !important;
+    margin: 0 auto;
+}
+
+.search-wrapper > input {
+    flex: 1;
+    padding: 10px 20px;
+    font-size: medium;
+    border: none;
+}
+.search-wrapper > input:focus {
+    outline-width: 0;
+}

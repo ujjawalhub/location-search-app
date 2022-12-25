@@ -1,0 +1,12 @@
+.searchResult__items {
+    list-style-type: none;
+}
+
+.searchResult__items li, .morechip {
+    padding: 10px;
+    float: left;
+}
+
+.morechip{
+    cursor: pointer;
+}
